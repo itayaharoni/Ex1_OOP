@@ -80,6 +80,7 @@ public class WGraph_Algo_Test {
     @Test
     @DisplayName("Test for methods save and load.")
     void test6(){
+        graph.addNode(9);
         graph_algo.save("graph.txt");
         WGraph_Algo graph_algo_load=new WGraph_Algo();
         graph_algo_load.load("graph.txt");

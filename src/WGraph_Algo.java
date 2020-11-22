@@ -193,7 +193,7 @@ public class WGraph_Algo implements weighted_graph_algorithms {
     @Override
     public boolean save(String file) {
         try {
-            FileOutputStream path = new FileOutputStream(file,true);
+            FileOutputStream path = new FileOutputStream(file);
             ObjectOutputStream out = new ObjectOutputStream(path);
             out.writeObject(graphAlgo);
             out.close();
